@@ -45,7 +45,7 @@ function App() {
         result = parseInt(operand1) + parseInt(operand2);
       } else if (operation === "-") {
         result = parseInt(operand1) - parseInt(operand2);
-      } else if (operation === "×") {
+      } else if (operation === "*") {
         result = parseInt(operand1) * parseInt(operand2);
       } else if (operation === "÷") {
         result = parseInt(operand2) !== 0 ? parseInt(operand1) / parseInt(operand2) : "Error";
@@ -120,7 +120,7 @@ function App() {
           <CalcButton buttonLabel={4} onClick={numbuttonClickHandler}/>
           <CalcButton buttonLabel={5} onClick={numbuttonClickHandler}/>
           <CalcButton buttonLabel={6} onClick={numbuttonClickHandler}/>
-          <CalcButton buttonLabel={"×"} buttonClassname="Button Button-operator" onClick={operationClickHandler}/>
+          <CalcButton buttonLabel={"*"} buttonClassname="Button Button-operator" onClick={operationClickHandler}/>
           <CalcButton buttonLabel={1} onClick={numbuttonClickHandler}/>
           <CalcButton buttonLabel={2} onClick={numbuttonClickHandler}/>
           <CalcButton buttonLabel={3} onClick={numbuttonClickHandler}/>
